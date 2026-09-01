@@ -143,13 +143,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Task": {
+		"validate": "northstar.northstar.utils.task_hooks.validate_subtask_depth",
+	}
+}
 
 # Scheduled Tasks
 # ---------------

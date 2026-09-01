@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "creation": "2026-09-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_type",
+  "description",
+  "item_owner",
+  "due_date",
+  "is_resolved",
+  "task"
+ ],
+ "fields": [
+  {
+   "default": "Action",
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Decision\nAction\nNote\nRisk",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_resolved",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Resolved"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Task",
+   "options": "Task",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "NorthStar",
+ "name": "MOM Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

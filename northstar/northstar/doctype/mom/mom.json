@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "MOM-.YYYY.-.#####",
+ "creation": "2026-09-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_type",
+  "title",
+  "held_on",
+  "chair",
+  "column_break_1",
+  "project",
+  "company",
+  "section_break_1",
+  "minutes_text",
+  "section_break_2",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Meeting Type",
+   "options": "Meeting Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "held_on",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Held On",
+   "reqd": 1
+  },
+  {
+   "fieldname": "chair",
+   "fieldtype": "Link",
+   "label": "Chair",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Minutes"
+  },
+  {
+   "fieldname": "minutes_text",
+   "fieldtype": "Text Editor",
+   "label": "Minutes / Decisions Summary"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Agenda / Action Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "MOM Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "NorthStar",
+ "name": "MOM",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}
